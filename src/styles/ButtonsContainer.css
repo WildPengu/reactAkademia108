@@ -1,0 +1,12 @@
+.buttons-container {
+  width: 400px;
+  padding: 40px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-inner-container {
+  display: flex;
+}

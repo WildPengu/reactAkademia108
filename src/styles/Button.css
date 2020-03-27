@@ -1,0 +1,10 @@
+.operation-button {
+  background-color: #42a7f5;
+  padding: 8px 0;
+  width: 100px;
+}
+
+.operation-button:hover {
+  background-color: #1f89db;
+  cursor: pointer;
+}

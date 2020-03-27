@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ButtonContainer from "./components/ButtonsContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  defaultNumber = 108;
+  state = {
+    number: this.defaultNumber
+  };
+  addNumber = () => {
+    this.setState({
+      number: this.state.number + 1
+    });
+  };
+  lowToZero = () => {
+    this.setState({
+      number: 0
+    });
+  };
+  resetToDefault = () => {
+    this.setState({
+      number: this.defaultNumber
+    });
+  };
+  render() {
+    return (
+      <div>
+        <ButtonContainer
+          number={this.state.number}
+          addNumber={this.addNumber}
+          resetToDefault={this.resetToDefault}
+          lowToZero={this.lowToZero}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
