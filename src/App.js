@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonContainer from "./components/ButtonsContainer";
+import Counter from "./components/Counter";
 
 class App extends React.Component {
   defaultNumber = 108;
@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ButtonContainer
+        <Counter
           number={this.state.number}
           addNumber={this.addNumber}
           resetToDefault={this.resetToDefault}

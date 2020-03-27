@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "./Button";
 import Number from "./Number";
-import "../styles/ButtonsContainer.css";
+import "../styles/Counter.css";
 
-const ButtonsContainer = props => {
+const Counter = props => {
   return (
     <div className="buttons-container">
       <Number number={props.number} />
@@ -16,4 +16,4 @@ const ButtonsContainer = props => {
   );
 };
 
-export default ButtonsContainer;
+export default Counter;
